@@ -5,8 +5,11 @@
   margin: auto;
   background: #ffffff;
   border: 1px solid red;
-  background-image: url('./../img/temp_bg2.png'); // это временный фон, чтобы легче было верстать
-  background-size: 100% 100%;
+  background: url('./../img/temp_bg2.png') no-repeat; // это временный фон, чтобы легче было верстать
+  background-size: 100%;
+  padding: 10.88709rem 8.3rem 13.79032rem 8.49193rem;
+  margin-bottom: 2rem; // временный отступ для удобства верстки
+  display: flex;
 
   /*
   Ширина макета в PSD составляет 2480px, высота 3508px
@@ -18,5 +21,15 @@
   27.41935483870968 / 100 = 0.2741935483870968
 
   */
+
+  &__small-col {
+    width: 71.5rem;
+    border: 1px dashed blue;
+  }
+
+  &__big-col {
+    width: 92rem;
+    border: 1px dashed blue;
+  }
 
 }
