@@ -1,0 +1,17 @@
+body {
+  font: $font-size $font-family;
+  line-height: $line-height;
+}
+
+h1 {
+  font-size: $font-size--h1;
+  text-transform: uppercase;
+  color: $color-main;
+}
+
+h2 {
+  font-size: $font-size--h2;
+  text-transform: uppercase;
+  color: $color-second;
+  // letter-spacing: 2px;
+}
