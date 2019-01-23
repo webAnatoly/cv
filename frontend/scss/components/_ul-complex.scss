@@ -1,0 +1,51 @@
+.ul-complex {
+  padding: 0;
+
+  &__li {
+    position: relative;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 2.5rem 7.7rem;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 2.8rem;
+      height: 2.8rem;
+      background-color: $color-main;
+      border-radius: 3rem;
+      top: .4rem;
+      left: -5.9rem;
+    }
+  }
+
+  &__header {
+    font-size: $font-size--big;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    &__span-1 {
+      color: $color-main;
+    }
+
+    &__span-2 {
+      font-size: $font-size--big;
+      font-weight: 400;
+      font-style: normal;
+      text-transform: capitalize;
+      margin-left: 2rem;
+    }
+  }
+
+  &__sub-header {
+    font-size: $font-size--big;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-top: 2.2rem;
+  }
+
+  &__text {
+    margin-top: 1.6rem;
+  }
+}

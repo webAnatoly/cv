@@ -34,9 +34,24 @@ html(lang="ru")
           +table-small(data, 'contact__table-small')
 
         +section("skills", "./img/skills.svg")
+      
       div.wrapper__big-col
         +section("education", "./img/education.svg", "education")
+          include ./../components/ul-complex.pug
+          -
+            var education = [{header: 'Master Degree', date: '// Feb 2011 - Jun 2016', subHeader: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'},
+              {header: 'Master Degree', date: '// Feb 2011 - Jun 2016', subHeader: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'},
+              {header: 'Master Degree', date: '// Feb 2011 - Jun 2016', subHeader: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'},
+              {header: 'Master Degree',date: '// Feb 2011 - Jun 2016', subHeader: 'university name', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'}]
+          +ul-complex(education, 'education-ul-complex')
+
         +section("experience", "./img/experience.svg", "experience")
+          -
+            var experience = [{header: 'company name', date: '// Oct 2015 - Aug 2019', subHeader: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'},
+              {header: 'company name', date: '// Oct 2015 - Aug 2019', subHeader: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'},
+              {header: 'company name', date: '// Oct 2015 - Aug 2019', subHeader: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'}]
+          +ul-complex(experience, 'experience-ul-complex')
+        
         +section("software", "./img/software.svg")
         
 

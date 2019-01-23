@@ -1,0 +1,9 @@
+mixin ul-complex(data, cssClass)
+  ul.ul-complex(class=cssClass)
+    each val in data
+      li.ul-complex__li
+        header.ul-complex__header
+          span.ul-complex__header__span-1=val.header 
+          span.ul-complex__header__span-2=val.date
+        p.ul-complex__sub-header=val.subHeader
+        p.ul-complex__text=val.text
