@@ -21,12 +21,23 @@ html(lang="ru")
   body
     .wrapper
       div.wrapper__small-col
+        include ./../components/face.pug
         include ./../components/section.pug
-        +section("profile", "./../../img/profile.svg")
-        //- +section("contacts", "./../../img/phone.svg")
-        //- +section("skills", "./../../img/skills.svg")
+        //- mixin section(title, imgSrc, cssClass)
+        +section("profile", "./img/profile.svg", "profile")
+          p(class="profile__p")
+            | Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu
+            span(class="profile__text--bold") pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.
+        +section("contact", "./img/phone.svg", "contact")
+          include ./../components/table-small.pug
+          - var data = {'address': 'Main Street, City.', 'e-mail': 'contact@domain.com', 'phone': '555-555-555', 'website': 'www.yourweb.com'}
+          +table-small(data, 'contact__table-small')
+
+        +section("skills", "./img/skills.svg")
       div.wrapper__big-col
-        +section("education", "./../../img/education.svg")
+        +section("education", "./img/education.svg")
+        +section("experience", "./img/experience.svg")
+        +section("software", "./img/software.svg")
         
 
 

@@ -1,0 +1,7 @@
+mixin table-small(data, cssClass)
+  table.table-small(class=cssClass)
+    tbody
+      each val, key in data
+        tr.table-small__tr
+          th.table-small__th-inline=key
+          td.table-small__td=val
