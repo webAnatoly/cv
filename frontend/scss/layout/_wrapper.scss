@@ -10,6 +10,7 @@
   padding: 10.88709rem 8.3rem 13.79032rem 8.49193rem;
   margin-bottom: 2rem; // временный отступ для удобства верстки
   display: flex;
+  justify-content: space-between;
 
   /*
   Ширина макета в PSD составляет 2480px, высота 3508px
@@ -23,13 +24,13 @@
   */
 
   &__small-col {
-    width: 71.5rem;
-    border: 1px dashed blue;
+    width: 60.4rem;
+    // border: 1px dashed blue;
   }
 
   &__big-col {
-    width: 92rem;
-    border: 1px dashed blue;
+    width: 91.8rem;
+    // border: 1px dashed blue;
   }
 
 }

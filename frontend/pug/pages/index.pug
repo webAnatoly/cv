@@ -21,7 +21,14 @@ html(lang="ru")
   body
     .wrapper
       div.wrapper__small-col
+        include ./../components/section.pug
+        +section("profile", "./../../img/profile.svg")
+        //- +section("contacts", "./../../img/phone.svg")
+        //- +section("skills", "./../../img/skills.svg")
       div.wrapper__big-col
+        +section("education", "./../../img/education.svg")
+        
+
 
       
     - var isDevelopment = !process.env.NODE_ENV || process.env.NODE_ENV === 'development';

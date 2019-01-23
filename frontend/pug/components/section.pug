@@ -1,0 +1,10 @@
+mixin section(title, img)
+  section.section.profile
+    header.section__header
+      .section__header__img
+        img(src=img, alt="", srcset="")
+      h2.section__header__h2=title
+      .section__header__decor-line
+    div.section__content
+      if block
+          block
