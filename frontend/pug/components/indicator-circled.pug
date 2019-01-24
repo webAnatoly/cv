@@ -1,0 +1,12 @@
+mixin indicator-circled(indicatorTitle, fill)
+  //- howMuch - это сколько кружочков должно показываться
+  div.indicator-circled
+    span.indicator-circled__title=indicatorTitle
+    div.indicator-circled__container
+      - for (var i = 0; i < 12; i += 1) {
+          if i < fill
+            .indicator-circled__item.indicator-circled__item--fill
+          else
+            .indicator-circled__item
+      - }
+      //- indicator-circled__item--fill

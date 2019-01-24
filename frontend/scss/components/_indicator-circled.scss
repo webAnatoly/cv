@@ -1,0 +1,35 @@
+.indicator-circled {
+  width: 100%;
+  min-height: 2rem;
+  
+  &__title {
+    display: block;
+    font-size: $font-size--big;
+    text-transform: uppercase;
+    margin: auto;
+    text-align: center;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 6.7rem;
+    padding-left: 6.3rem;
+  }
+
+  &__item {
+    background-color: $color-grey;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 100%;
+
+    &:not(:last-child) {
+      margin-right: 1.52rem;
+    }
+
+    &--fill {
+      background-color: $color-second;
+    }
+  }
+}

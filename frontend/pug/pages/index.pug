@@ -33,7 +33,12 @@ html(lang="ru")
           - var data = {'address': 'Main Street, City.', 'e-mail': 'contact@domain.com', 'phone': '555-555-555', 'website': 'www.yourweb.com'}
           +table-small(data, 'contact__table-small')
 
-        +section("skills", "./img/skills.svg")
+        +section("skills", "./img/skills.svg", "skills")
+          include ./../components/indicator-circled.pug
+          +indicator-circled('creative', 9)
+          +indicator-circled('teamwork', 11)
+          +indicator-circled('innovate', 6)
+          +indicator-circled('communication', 11)
       
       div.wrapper__big-col
         +section("education", "./img/education.svg", "education")
