@@ -57,7 +57,18 @@ html(lang="ru")
               {header: 'company name', date: '// Oct 2015 - Aug 2019', subHeader: 'your job here', text: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.'}]
           +ul-complex(experience, 'experience-ul-complex')
         
-        +section("software", "./img/software.svg")
+        +section("software", "./img/software.svg", "software")
+          include ./../components/indicator-line.pug
+          .row
+            .col-6
+              +indicator-line('photoshop', 92)
+              +indicator-line('illustrator', 71)
+              +indicator-line('indesign', 57)
+              +indicator-line('JavaScript', 52)
+            .col-6
+              +indicator-line('dreamweaver', 83)
+              +indicator-line('after effects', 61)
+              +indicator-line('html5&css3', 91)
         
 
 

@@ -1,0 +1,6 @@
+mixin indicator-line(indicatorTitle, fill)
+  - var fillWidth = "width:" + fill + "%"
+  div.indicator-line
+    span.indicator-line__title=indicatorTitle
+    div.indicator-line__container
+      div.indicator-line__fill(style=fillWidth)

@@ -1,0 +1,18 @@
+.software {
+
+  & .section__content {
+    padding: 4.35rem 0 0 1rem;
+  }
+
+  & .indicator-line {
+    margin-bottom: 3.93rem;
+  }
+
+  & div[class*="col-"]:nth-child(even) {
+    padding-left: 5rem;
+
+    @media (max-width: $phone) {
+      padding-left: 0;
+    }
+  }
+}

@@ -1,0 +1,30 @@
+.indicator-line {
+  width: 40.209rem;
+  min-height: 2rem;
+
+  &__title {
+    display: block;
+    font-size: $font-size--big;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: 2.7rem;
+  }
+
+  &__container {
+    position: relative;
+    width: 40.209rem;
+    height: 3.193rem;
+    background: $color-grey;
+  }
+
+  &__fill {
+    content: '';
+    display: block;
+    height: 3.193rem;
+    width: 1px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $color-second;
+  }
+}

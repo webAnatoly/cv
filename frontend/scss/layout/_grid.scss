@@ -3,7 +3,6 @@
   width: 100%;
   max-width: 180rem; // 1800px / 10 = 180
   margin: 0 auto;
-  border: 4px dashed green;
 }
 
 .row {
@@ -14,7 +13,6 @@
 
   margin: 0 auto;
   padding: 0;
-  border: 3px solid yellowgreen;
 
   @media only screen and (max-width:$phone) {
     display: block;
@@ -45,8 +43,6 @@ div[class^="col-"]:not(:last-child) {
 .col-12 { width: 100%; }
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
-  border: 2px solid lightcoral;
-  background-color: lightblue;
   min-height: inherit;
   padding: 0;
   margin: 0;
