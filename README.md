@@ -1,1 +1,1 @@
-Ссылка на Github Pages webanatoly.github.io/examplesHTML/cv/index.html
+Ссылка на Github Pages https://webanatoly.github.io/examplesHTML/cv/index.html
