@@ -47,6 +47,11 @@ gulp.task('assets', function () {
     .pipe(gulp.dest('public/img'));
 });
 
+gulp.task('fonts', function () {
+  return gulp.src('frontend/fonts/**/*.*', { since: gulp.lastRun('fonts') })
+    .pipe(gulp.dest('public/fonts'));
+});
+
 gulp.task('favicons', function () {
   return gulp.src('frontend/*.*', { since: gulp.lastRun('favicons'), nodir: true })
     .pipe(gulp.dest('public'));
@@ -71,7 +76,7 @@ gulp.task('js', function (cb) {
 
 gulp.task('build', gulp.series(
   'clean',
-  gulp.parallel('styles', 'assets', 'pug', 'js', 'favicons'))
+  gulp.parallel('styles', 'assets', 'pug', 'js', 'favicons', 'fonts'))
 );
 
 gulp.task('watch', () => {
@@ -79,6 +84,7 @@ gulp.task('watch', () => {
   gulp.watch('frontend/img/**/*.*', gulp.series('assets'));
   gulp.watch('frontend/pug/**/*.*', gulp.series('pug'));
   gulp.watch('frontend/js/**/*.js', gulp.series('js'));
+  gulp.watch('frontend/js/**/*.js', gulp.series('fonts'));
 });
 
 gulp.task('serve', () => {

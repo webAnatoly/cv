@@ -22,10 +22,10 @@
 
   &__header {
     font-size: $font-size--big;
-    font-weight: 700;
     text-transform: uppercase;
 
     &__span-1 {
+      font-family: $font-family--bold;
       color: $color-main;
     }
 

@@ -4,12 +4,14 @@ body {
 }
 
 h1 {
+  font-family: $font-family--bold;
   font-size: $font-size--h1;
   text-transform: uppercase;
   color: $color-main;
 }
 
 h2 {
+  font-family: $font-family--bold;
   font-size: $font-size--h2;
   text-transform: uppercase;
   color: $color-second;
