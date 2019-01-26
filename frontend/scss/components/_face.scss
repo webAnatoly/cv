@@ -1,24 +1,54 @@
-section.face {
+.face {
   width: 100%;
   min-height: 71.84rem;
-  border: 1px solid red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
 
   &__photo-holder {
+    position: relative;
+    margin-top: 4rem;
+    width: 29.2rem;
+    height: 29.2rem;
+    background-color: $color-second;
+    border-radius: 100%;
+    z-index: 10;
+    box-shadow: 0px -1px 0px 2rem $color-light,
+                0px -1px 0px 2.2rem rgb(68, 101, 175);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 
-    &__img {
-
+    &-img {
+      width: 100%;
+      text-align: center;
     }
   }
 
   &__first-name {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 9rem;
+    font-size: 7.7rem;
 
   }
 
   &__surname {
+    display: block;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    font-size: 9rem;
+    font-weight: 700;
 
   }
 
   &__profession {
-
+    display: block;
+    text-transform: uppercase;
+    margin-top: 5rem;
+    font-size: $font-size--big;
+    font-weight: 700;
   }
 }
