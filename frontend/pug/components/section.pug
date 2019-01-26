@@ -2,7 +2,7 @@ mixin section(title, imgSrc, cssClass)
   //- cssClass это класс для изменения блока по БЭМ нотации, т.е. данный класс предназначен для изменения внешнего вида блока или его позиционирования
   section.section(class=cssClass)
     header.section__header
-      .section__header__img
+      .section__header__img(class=cssClass + "__img")
         img(src=imgSrc, alt="", srcset="")
       h2.section__header__h2=title
       .section__header__decor-line
