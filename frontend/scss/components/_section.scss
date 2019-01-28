@@ -3,16 +3,35 @@
   min-height: 33rem;
   border: 1px solid transparent; // если без рамки, то разные браузеры по разному вычесляют высоту секции. Мне кажется это связано с отступами вложенных в секцию элементов.
 
+  @media (max-width: $tab-land) {
+    margin-top: 4rem;
+  }
+
+  @media (max-width: $phone) {
+    margin-top: 2rem;
+  }
+
   &__header {
     width: 100%;
     min-height: 10.379rem;
     display: flex;
     align-items: center;
 
+    @media (max-width: $phone) {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
     &__img {
       width: 10.379rem;
       height: 10.379rem;
       margin-right: 3.5rem;
+
+      @media (max-width: $phone) {
+        width: 13vw;
+        height: 13vw;
+        margin-right: 1rem;
+      }
 
       & img {
         width: 100%;
@@ -22,12 +41,21 @@
 
     &__h2 {
       margin-right: 1.45rem;
+      
+      @media (max-width: $phone) {
+        font-size: $font-size--h2-mobile;
+        flex: 0 1 auto;
+      }
     }
 
     &__decor-line {
       height: .7258rem;
       flex: 1 1 auto;
       background-color: $color-second;
+
+      @media (max-width: $phone) {
+        flex: 0 1 100%;
+      }
     }
   }
 

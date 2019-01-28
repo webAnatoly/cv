@@ -11,14 +11,22 @@
     text-align: left;
     vertical-align: bottom;
     width: 30.5%;
-    font-size: 2.9rem;
+    font-size: $font-size--medium;
     color: $color-second;
     text-transform: uppercase;
+
+    @media (max-width: $phone) {
+      font-size: $font-size--medium-mobile;
+    }
   }
 
   &__td {
     width: 69.5%;
-    font-size: 2.9rem;
+    font-size: $font-size--medium;
     vertical-align: bottom;
+
+    @media (max-width: $phone) {
+      font-size: $font-size--medium-mobile;
+    }
   }
 }

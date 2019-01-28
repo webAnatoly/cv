@@ -1,14 +1,20 @@
 .wrapper {
-  min-width: 180.0rem; 
+  min-width: 20rem; 
   max-width: 180.0rem;
   min-height: 254.61290322580644rem; // 3508px - (3508 * 0.2741935483870968) = 2546.1290322580644px = 254.61290322580644rem
   margin: auto;
   background: #ffffff;
-  border: 1px solid red;
   padding: 10.88709rem 8.3rem 13.79032rem 8.9rem;
-  margin-bottom: 2rem; // временный отступ для удобства верстки
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
+
+  @media (max-width: $tab-land) {
+    padding: 4rem 4rem;
+  }
+  @media (max-width: $phone) {
+    padding: 2rem 2rem;
+  }
 
   /*
   Ширина макета в PSD составляет 2480px, высота 3508px
@@ -22,11 +28,21 @@
   */
 
   &__small-col {
-    width: 62.3rem;
+    // width: 62.3rem;
+    width: 38.3%;
+
+    @media (max-width: $tab-land) {
+      width: 100%;
+    }
   }
 
   &__big-col {
-    width: 91.8rem;
+    // width: 91.8rem;
+    width: 56.5%;
+
+    @media (max-width: $tab-land) {
+      width: 100%;
+    }
   }
 
 }

@@ -6,6 +6,11 @@
   align-items: center;
   flex-direction: column;
 
+  @media (max-width: $phone) {
+    text-align: center;
+    min-height: 50rem;
+  }
+
   &__photo-holder {
     position: relative;
     margin-top: 4rem;
@@ -21,6 +26,11 @@
     align-items: center;
     overflow: hidden;
 
+    @media (max-width: $phone) {
+      width: 50vw;
+      height: 50vw;
+    }
+
     &-img {
       width: 100%;
       text-align: center;
@@ -30,24 +40,38 @@
   &__first-name {
     display: block;
     text-transform: uppercase;
-    margin-top: 9rem;
+    margin-top: 6rem;
     font-size: 7.7rem;
+    line-height: 1;
+
+    @media (max-width: $phone) {
+      font-size: 4rem;
+    }
 
   }
 
   &__surname {
     display: block;
     text-transform: uppercase;
-    margin-top: 5rem;
     font-family: $font-family--bold;
     font-size: 9rem;
+    line-height: 1;
+
+    @media (max-width: $phone) {
+      font-size: 6rem;
+    }
   }
 
   &__profession {
     display: block;
     text-transform: uppercase;
-    margin-top: 5rem;
-    // font-family: $font-family--bold;
-    // font-size: $font-size--big;
+    margin-top: 1rem;
+    font-family: $font-family--bold;
+    font-size: $font-size--big;
+    line-height: 1;
+
+    @media (max-width: $phone) {
+      font-size: $font-size--big-mobile;
+    }
   }
 }

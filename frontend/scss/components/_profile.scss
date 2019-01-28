@@ -1,6 +1,10 @@
 .profile {
   min-height: 53.6rem;
 
+  @media (max-width: $tab-land) {
+    min-height: 33rem;
+  }
+
   &__img {
     margin-right: 1.8rem;
   }

@@ -8,6 +8,10 @@
     text-transform: uppercase;
     margin: auto;
     text-align: center;
+    
+    @media (max-width: $phone) {
+      font-size: $font-size--big-mobile;
+    }
   }
 
   &__container {
@@ -15,7 +19,10 @@
     align-items: center;
     width: 100%;
     min-height: 6.7rem;
-    padding-left: 6.3rem;
+
+    @media (max-width: $tab-land) {
+      justify-content: center;
+    }
   }
 
   &__item {
@@ -23,9 +30,25 @@
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 100%;
+    flex: 0 0 auto;
+
+    @media (max-width: $phone) {
+      width: 4vw;
+      height: 4vw;
+    }
 
     &:not(:last-child) {
       margin-right: 1.52rem;
+
+      @media (max-width: $big-desktop) {
+        margin-right: .8rem;
+      }
+      @media (max-width: $tab-land) {
+        margin-right: 1.52rem;
+      }
+      @media (max-width: $phone) {
+        margin-right: .52rem;
+      }
     }
 
     &--fill {

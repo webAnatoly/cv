@@ -2,17 +2,21 @@
 
   & .section__content {
     padding: 4.35rem 0 0 1rem;
+
+    @media (max-width: $phone) {
+      padding: 4.35rem 0 0 0;
+    }
   }
 
   & .indicator-line {
     margin-bottom: 3.93rem;
   }
 
-  & div[class*="col-"]:nth-child(even) {
-    padding-left: 5rem;
+  & div[class*="col-"] {
+    width: 44.4%;
 
     @media (max-width: $phone) {
-      padding-left: 0;
+      width: 100%;
     }
   }
 }
